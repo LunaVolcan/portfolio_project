@@ -9,6 +9,7 @@
 </head>
 <body>
     <header>
+      <div class="name-logo">
         <div class="logo"><?xml version="1.0" encoding="UTF-8"?>
             <svg class="moon" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
              <g fill="#f9ead6">
@@ -35,6 +36,7 @@
             </svg>
             </div>
             <div class="header-name"><h1>Luna Fernandez</h1></div>
+            </div>
             <nav class="bar-nav" id="navMenu">
             <ul class="header-menu">
               <li><a href="#projects">Projects</a></li>
@@ -43,7 +45,9 @@
               <li><a href="contact.html" target="_blank">Contact</a></li>
               <li><a href="https://www.linkedin.com/in/luna-fernandez/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
               <li><a href="https://github.com/LunaVolcan?tab=repositories" target="_blank"> <i class="fa fa-github"></i></a></li>
-            <button class="button">RESUME</button>
+            <a href="https://sentry.io/answers/">
+              <button class="resume-btn">RESUME</button>
+              </a>
             </ul>
           </nav>
           <button class="header-burger" id="hamburgerButton">
@@ -60,33 +64,45 @@
     <p class="hero-p">I'm a student learning HTML, CSS, & vanilla Javascript</p>
   </section>
   <div class="border"></div>
-    <section class="projects-section" id="projects"><h2>Projects I'm proud of:</h2>
-    <h3>Cannons Coffee</h3>
-    <img src="img/portfolio-coffee.png" class="project-imgs">
-    <p>Cannons Coffee was my first major project. I began by working with images of the site at large and medium dimensions, and then I coded the necessary HTML and CSS to create two pages, utilizing CSS Grid for the layouts. As I progressed in my learning journey, I incorporated a hamburger menu for mobile dimensions using JavaScript.</p>
+  <div class="proud">
+    <h2>Projects I'm Proud Of</h2>
+  </div>
+    <section class="projects-section" id="projects">
+      <div class="card">
+        <h3 class="project-text">Cannons Coffee</h3>
+        <img src="img/portfolio-coffee.png" class="project-imgs">
+        <p class="project-p">Cannons Coffee was my first major project. I began by working with images of the site at large and medium dimensions, and then I coded the necessary HTML and CSS to create two pages, utilizing CSS Grid for the layouts. As I progressed in my learning journey, I incorporated a hamburger menu for mobile dimensions using JavaScript.</p>
+        <p><a href="View The Sitel" target="_blank" class="button">View The Site</a></p>
+      </div>
+      <div class="card">
+      <h3 class="project-text">Ice Cream Ordering Form</h3>
+      <img src="img/portfolio-icecream.png" class="project-imgs">
+      <p class="project-p">Through the Ice Cream Ordering Form project, I gained proficiency in HTML form elements, CSS styling, and form submission using JavaScript processing. This form features a variety of input types, including text fields, text areas, radio buttons, checkboxes, and a dropdown menu.</p>
+      <p><a href="View The Sitel" target="_blank" class="button">View The Site</a></p>
+      </div>
+      <div class="card">
+      <h3 class="project-text">Springdale Farmer's Market</h3>
+      <img src="img/portfolio-fm.png" class="project-imgs">
+      <p class="project-p">Applying the knowledge gained from the Cannon’s Coffee project, I constructed this website based on the provided specifications. Additionally, I enhanced it with JavaScript elements, including a hamburger button.</p>
     <p><a href="View The Sitel" target="_blank" class="button">View The Site</a></p>
-    <h3>Ice Cream Ordering Form</h3>
-    <img src="img/portfolio-icecream.png" class="project-imgs">
-    <p>Through the Ice Cream Ordering Form project, I gained proficiency in HTML form elements, CSS styling, and form submission using JavaScript processing. This form features a variety of input types, including text fields, text areas, radio buttons, checkboxes, and a dropdown menu.</p>
-    <p><a href="View The Sitel" target="_blank" class="button">View The Site</a></p>
-    <h3>Springdale Farmer's Market</h3>
-    <img src="img/portfolio-fm.png" class="project-imgs">
-    <p>Applying the knowledge gained from the Cannon’s Coffee project, I constructed this website based on the provided specifications. Additionally, I enhanced it with JavaScript elements, including a hamburger button.</p>
-    <p><a href="View The Sitel" target="_blank" class="button">View The Site</a></p>
+      </div>
     </section>
     <div class="border"></div>
     <section class="contact-section">
-      <h3>Contact Me</h3>
-      <p>I am always interested in learning about opportunities for growth, internships, or job placements.</p>
-      <p><a href="contact.html" target="_blank" class="button">Contact Me</a></p>
+      <h3 class="contact-h">Contact Me</h3>
+      <p class="contact-p">I am always interested in learning about opportunities for growth, internships, or job placements.</p>
+      <p><a href="contact.html" target="_blank" class="contact-button">Contact Me</a></p>
+    
     </section>
     <div class="border"></div>
     <footer>
-      <h3>Luna Fernandez•Developer</h3>
-      <a href="https://www.linkedin.com/in/luna-fernandez/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <h3 class="footer-h">Luna Fernandez•Developer</h3>
+      <div class="icons">
+      <a href="https://www.linkedin.com/in/luna-fernandez/" target="_blank"><i class="fa fa-linkedin"></i></a>
               <a href="https://github.com/LunaVolcan?tab=repositories" target="_blank"> <i class="fa fa-github"></i></a>
               <a href="mailto:lunafernandez222@gmail.com" target="_blank"> <i class="fa-solid fa-envelope"></i></a>
-              <p>	&copy;2024 Luna Fernandez. All Rights Reserved</p>
+            </div>
+              <p class="footer-p">	&copy;2024 Luna Fernandez. All Rights Reserved</p>
     </footer>
     <script type="module" src="js/custom.js"></script>
 </body>
