@@ -61,96 +61,84 @@ function logProjects() {
 logProjects()
 
 
+//madlib
 
+// * <section class="js-section" id="jsSection">
+// <button class="madlib-btn" id="madLibButton">Show Mad Lib</button>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// console.log(projectData)
-
-// function logProjects() {
-//   const projects = data.results.projects;
-//   for (let i = 0; i < projects.length; i++) {
-//     console.log(projects[i]);
-//   }
-// }
-
-// function displayProjects() {
-
-//   const projects = data.results.projects;
-//   // const project = document.createElement("projectSection");
-//   const project = document.getElementById("projectSection");
-//   projectSection.textContent = ``;
-
-//   for (let i = 0;  i < projects.length; i++) {
-//     const project = projects[i];
-
-  
-//   }
-
-// }
-
-
-
-
-// console.log(projectData[i])
-
-// function displayBooks() {
-// 	const books = data.results.books;
-// 	const ol = document.createElement("ol");
-
-// 	for (let i = 0; i < books.length; i++) {
-// 		const li = document.createElement("li");
-// 		li.textContent = books[i].title;
-// 		ol.appendChild(li);
-// 	}
-
-// 	document.body.appendChild(ol);
-// }
-
-// logBooks();
-// displayBooks();
-
-
-// projectSection.textContent += `  
-// <div class="card">
-// <h3 class="project-text">Cannons Coffee</h3>
-// <img src="img/portfolio-coffee.png" class="project-imgs">
-// <p class="project-p">Cannons Coffee was my first major project. I began by working with images of the site at large and medium dimensions, and then I coded the necessary HTML and CSS to create two pages, utilizing CSS Grid for the layouts. As I progressed in my learning journey, I incorporated a hamburger menu for mobile dimensions using JavaScript.</p>
-// <p><a href="https://lunavolcan.github.io/cannons-coffee/" target="_blank" class="button">View The Site</a></p>
+// <div id="madLibPopup" class="hidden">
+//     <h2 class="madlib-text">Mad Lib</h2>
+//     <form class="madlib-form" id="madLibForm">
+//         <label for="noun">Noun:</label>
+//         <input type="text" id="noun" name="noun"><br><br>
+//         <label for="verb">Verb:</label>
+//         <input type="text" id="verb" name="verb"><br><br>
+//         <label for="adjective">Adjective:</label>
+//         <input type="text" id="adjective" name="adjective"><br><br>
+//         <label for="adverb">Adverb:</label>
+//         <input type="text" id="adverb" name="adverb"><br><br>
+//         <button class="madlib-submit" type="submit">Create Mad Lib</button>
+//     </form>
+//     <div id="madLibResult"></div>
 // </div>
-// `
+// </section> */
 
-// function logBooks() {
-// 	const books = data.results.books;
-// 	for (let i = 0; i < books.length; i++) {
-// 		console.log(books[i].title);
-// 	}
+
+// const madLibButton = document.getElementById('madLibButton');
+// const madLibPopup = document.getElementById('madLibPopup');
+// const madLibForm = document.getElementById('madLibForm');
+// const madLibResult = document.getElementById('madLibResult');
+
+// function togglePopup() {
+//     console.log("Toggling popup");
+//     if (madLibPopup.style.display === 'none' || madLibPopup.style.display === '') {
+//         madLibPopup.style.display = 'block';
+//     } else {
+//         madLibPopup.style.display = 'none';
+//     }
+//   }
+
+// function createMadLib(event) {
+//     event.preventDefault();
+//     console.log("Creating Mad Lib");
+//     const noun = document.getElementById('noun').value;
+//     const verb = document.getElementById('verb').value;
+//     const adjective = document.getElementById('adjective').value;
+//     const adverb = document.getElementById('adverb').value;
+
+//     const story = `Once upon a time, a ${adjective} ${noun} decided to ${verb} ${adverb}.`;
+//     madLibResult.textContent = story;
 // }
 
+// function initializeEventListeners() {
+//     madLibButton.addEventListener('click', togglePopup);
+//     madLibForm.addEventListener('submit', createMadLib);
+//     console.log("Event listeners initialized");
+// }
+
+// // Call the function to initialize event listeners
+// initializeEventListeners();
+
+//contact form 
+
+const form = document.getElementById("contactForm");
+let userArray = [];
+
+form.addEventListener("submit", onFormSubmit);
+
+let string; 
+
+function onFormSubmit(event) {
+    event.preventDefault();
+    const data = new FormData(event.target);
+    const dataObject = Object.fromEntries(data.entries());
+
+    userArray.push(dataObject);
+    console.log(data.entries);
+    form.reset();
+    string = dateObject.comments;
+    console.log(string)
+}
 
 
 
@@ -162,35 +150,44 @@ logProjects()
 
 
 
-// 1. Get references to elements:
-// a. const colorSelect = document.getElementById('color');
-// b. const typeSelect = document.getElementById('type');
-// c. const submitButton = document.getElementById('submitButton');
-// d. const colorDisplay = document.getElementById('colorDisplay');
-// e. const container = document.getElementById('container');
-// f. const colorLabel = document.getElementById('colorLabel');
-// g. const typeLabel = document.getElementById('typeLabel');
-// h. const showPickerButton = document.getElementById('showPickerButton');
-// i. const colorPickerForm = document.getElementById('colorPickerForm');
-// j. const mainTitle = document.getElementById('mainTitle');
-// 2. Add event listener to showPickerButton for 'click' event:
-// a. showPickerButton.addEventListener('click', function() {
-//    i. Set colorPickerForm style display to 'block' to show the form.
-// });
-// 3. Add event listener to submitButton for 'click' event:
-// a. submitButton.addEventListener('click', function() {
-//    i. Get selected color and type values:
-//       1. const selectedColor = colorSelect.value;
-//       2. const selectedType = typeSelect.value;
-//    ii. Check selected type:
-//       1. If selectedType === 'background':
-//          a. Set container background color to selectedColor.
-//       2. Else if selectedType === 'text':
-//          a. Set mainTitle color to selectedColor.
-//          b. Set colorLabel color to selectedColor.
-//          c. Set typeLabel color to selectedColor.
-//          d. Set colorSelect text color to selectedColor.
-//          e. Set typeSelect text color to selectedColor.
-// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

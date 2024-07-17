@@ -57,33 +57,28 @@
             </button>
           </header>
         <div class="border"></div>
-        <section class="js">
-          
-          <!-- <div class="container" id="picker-container">
-            <button class="color-btn" id="show-picker-button">Show Color Picker</button>
-            <form class="color-form" id="color-picker-form" style="display: none;">
-              <label for="color" id="color-label">Choose a color:</label>
-              <select id="color">
-                <option value="">--Please choose an option--</option>
-                <option value="#ff0000">Red</option>
-                <option value="#00ff00">Green</option>
-                <option value="#0000ff">Blue</option>
-                <option value="#ffff00">Yellow</option>
-              </select>
-        
-              <label for="type" id="type-label">Choose a type:</label>
-              <select id="type">
-                <option value="">--Please choose an option--</option>
-                <option value="background">Background</option>
-                <option value="text">Text</option>
-              </select>
-        
-              <button type="submit-color" id="submit-btn">Submit</button>
-            </form>
-            <div id="color-display" class="color-display"></div>
-          </div> -->
-          
-        </section>
+        <section class="js-section" id="jsSection">
+          <button class="madlib-btn" id="madLibButton">Show Mad Lib</button>
+  
+          <div id="madLibPopup" class="hidden">
+              <h2 class="madlib-text">Mad Lib</h2>
+              <form class="madlib-form" id="madLibForm">
+                  <label for="noun">Noun:</label>
+                  <input type="text" id="noun" name="noun"><br><br>
+                  <label for="verb">Verb:</label>
+                  <input type="text" id="verb" name="verb"><br><br>
+                  <label for="adjective">Adjective:</label>
+                  <input type="text" id="adjective" name="adjective"><br><br>
+                  <label for="adverb">Adverb:</label>
+                  <input type="text" id="adverb" name="adverb"><br><br>
+                  <button class="madlib-submit" type="submit">Create Mad Lib</button>
+              </form>
+              <div id="madLibResult"></div>
+          </div>
+      </section>
+  
+      <div class="border"></div>
+  
 <div class="border"></div>
 <footer>
   <h3 class="footer-h">Luna Fernandez•Developer</h3>
