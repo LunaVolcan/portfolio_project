@@ -1,5 +1,5 @@
 import projectData from "../data/data.js"
-const projects = document.getElementById("projects")
+const projects = document.getElementById("projectSection")
 console.log(projects)
 
 // hamburger
@@ -20,29 +20,98 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // projects
 
-// console.log(projectData)
-
 function logProjects() {
-  const projects = data.results.projects;
+  const projects = projectData;
   for (let i = 0; i < projects.length; i++) {
-    console.log(projects[i]);
-  }
-}
-
-function displayProjects() {
-
-  const projects = data.results.projects;
-  // const project = document.createElement("projectSection");
-  const project = document.getElementById("projectSection");
-  projectSection.textContent = ``;
-
-  for (let i = 0;  i < projects.length; i++) {
     const project = projects[i];
 
-  
-  }
+    const card = document.createElement('div');
+    card.classList.add('card');
 
+    const title = document.createElement('h3');
+    title.classList.add('project-text');
+    title.textContent = project.title;
+
+    const img = document.createElement('img');
+    img.src = project.image;
+    img.classList.add('project-imgs');
+
+    const description = document.createElement('p');
+    description.classList.add('project-p');
+    description.textContent = project.description;
+
+    const link = document.createElement('a');
+    link.href = project.link;
+    link.target = '_blank';
+    link.classList.add('button');
+    link.textContent = 'View The Site';
+
+    const linkParagraph = document.createElement('p');
+    linkParagraph.appendChild(link);
+
+    card.appendChild(title);
+    card.appendChild(img);
+    card.appendChild(description);
+    card.appendChild(linkParagraph);
+
+    projectSection.appendChild(card);
+  }
 }
+
+logProjects()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// console.log(projectData)
+
+// function logProjects() {
+//   const projects = data.results.projects;
+//   for (let i = 0; i < projects.length; i++) {
+//     console.log(projects[i]);
+//   }
+// }
+
+// function displayProjects() {
+
+//   const projects = data.results.projects;
+//   // const project = document.createElement("projectSection");
+//   const project = document.getElementById("projectSection");
+//   projectSection.textContent = ``;
+
+//   for (let i = 0;  i < projects.length; i++) {
+//     const project = projects[i];
+
+  
+//   }
+
+// }
 
 
 
