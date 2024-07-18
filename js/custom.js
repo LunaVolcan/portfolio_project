@@ -1,6 +1,5 @@
 import projectData from "../data/data.js"
-const projects = document.getElementById("projectSection")
-console.log(projects)
+
 
 // hamburger
 
@@ -24,6 +23,8 @@ function logProjects() {
   const projects = projectData;
   for (let i = 0; i < projects.length; i++) {
     const project = projects[i];
+
+    const projectSection = document.getElementById("projectSection")
 
     const card = document.createElement('div');
     card.classList.add('card');
@@ -58,7 +59,7 @@ function logProjects() {
   }
 }
 
-logProjects()
+git in
 
 
 //madlib
@@ -121,24 +122,22 @@ logProjects()
 
 //contact form 
 
-const form = document.getElementById("contactForm");
-let userArray = [];
+// const form = document.getElementById("contactForm");
+// let userArray = [];
 
-form.addEventListener("submit", onFormSubmit);
+// form.addEventListener("submit", onFormSubmit);
 
-let string; 
+// function onFormSubmit(event) {
+//     event.preventDefault();
+//     const data = new FormData(event.target);
+//     const dataObject = Object.fromEntries(data.entries());
 
-function onFormSubmit(event) {
-    event.preventDefault();
-    const data = new FormData(event.target);
-    const dataObject = Object.fromEntries(data.entries());
+//     userArray.push(dataObject);
+//     console.log(data.entries);
+//     form.reset();
+// }
 
-    userArray.push(dataObject);
-    console.log(data.entries);
-    form.reset();
-    string = dateObject.comments;
-    console.log(string)
-}
+// console.log(form)
 
 
 
