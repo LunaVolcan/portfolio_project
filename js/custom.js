@@ -19,47 +19,50 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // projects
 
+
 function logProjects() {
+  const projectSection = document.getElementById("projectSection")
   const projects = projectData;
-  for (let i = 0; i < projects.length; i++) {
-    const project = projects[i];
+  if (projectSection) {
 
-    const projectSection = document.getElementById("projectSection")
-
-    const card = document.createElement('div');
-    card.classList.add('card');
-
-    const title = document.createElement('h3');
-    title.classList.add('project-text');
-    title.textContent = project.title;
-
-    const img = document.createElement('img');
-    img.src = project.image;
-    img.classList.add('project-imgs');
-
-    const description = document.createElement('p');
-    description.classList.add('project-p');
-    description.textContent = project.description;
-
-    const link = document.createElement('a');
-    link.href = project.link;
-    link.target = '_blank';
-    link.classList.add('button');
-    link.textContent = 'View The Site';
-
-    const linkParagraph = document.createElement('p');
-    linkParagraph.appendChild(link);
-
-    card.appendChild(title);
-    card.appendChild(img);
-    card.appendChild(description);
-    card.appendChild(linkParagraph);
-
-    projectSection.appendChild(card);
+    for (let i = 0; i < projects.length; i++) {
+      const project = projects[i];
+  
+      const card = document.createElement('div');
+      card.classList.add('card');
+  
+      const title = document.createElement('h3');
+      title.classList.add('project-text');
+      title.textContent = project.title;
+  
+      const img = document.createElement('img');
+      img.src = project.image;
+      img.classList.add('project-imgs');
+  
+      const description = document.createElement('p');
+      description.classList.add('project-p');
+      description.textContent = project.description;
+  
+      const link = document.createElement('a');
+      link.href = project.link;
+      link.target = '_blank';
+      link.classList.add('button');
+      link.textContent = 'View The Site';
+  
+      const linkParagraph = document.createElement('p');
+      linkParagraph.appendChild(link);
+  
+      card.appendChild(title);
+      card.appendChild(img);
+      card.appendChild(description);
+      card.appendChild(linkParagraph);
+  
+      projectSection.appendChild(card);
+    }
   }
 }
 
-git in
+logProjects()
 
 
 //madlib
@@ -122,22 +125,26 @@ git in
 
 //contact form 
 
-// const form = document.getElementById("contactForm");
-// let userArray = [];
+const form = document.getElementById("contactForm");
+const submit = document.getElementById("submitButton")
+let userArray = [];
 
-// form.addEventListener("submit", onFormSubmit);
+if (form) {
 
-// function onFormSubmit(event) {
-//     event.preventDefault();
-//     const data = new FormData(event.target);
-//     const dataObject = Object.fromEntries(data.entries());
+  submit.addEventListener("submit", onFormSubmit);
+  
+  function onFormSubmit(event) {
+      event.preventDefault();
+      const data = new FormData(event.target);
+      const dataObject = Object.fromEntries(data.entries());
+  
+      userArray.push(dataObject);
+      console.log(data.entries);
+      form.reset();
+  }
+   console.log(form)
+}
 
-//     userArray.push(dataObject);
-//     console.log(data.entries);
-//     form.reset();
-// }
-
-// console.log(form)
 
 
 
