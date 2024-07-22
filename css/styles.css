@@ -238,63 +238,8 @@ height: 40rem;
 padding-top: 10em;
 }
 
-.madlib-btn {
-  margin: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
-  height: 10rem;
-  width: 24rem;
-  border: #AF526B solid 1px;
-  border-radius:10px;
-  background-color: #AF526B;
-  font-family: var(--main-font);
-  color: var(--font-color);
-  font-size: x-large;
-}
-
-.madlib-text {
-  font-family: var(--main-font);
-}
 
 
-
-#madLibPopup {
-  margin: 20px 0;
-  padding: 20px;
-  /* margin-top: 2rem; */
-  background: var(--main-color)
-}
-
-.madlib-submit {
-  border: solid var(--sorbet) 2px;
-  border-radius: 5px;
-  background-color: var(--sorbet);
-  color: var(--font-color);
-  font-family: var(--main-font);
-  padding: .4rem;
-  margin-left: 1rem;
-  text-decoration: none;
-}
-
-/* .hidden {
-  display: none;
-} */
-
-.madlib-form  {
- border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 14px;
-  /* width: 30rem; */
-}
-
-#madLibForm label {
-  display: block;
-  margin-top: 10px;
-  font-family: var(--second-font);
-  font-weight: 100;
-  font-size: 14px;
-  color:var(--font-color)
-}
 
 .contact-section {
   /* font-family: var(--main-font);
@@ -404,7 +349,7 @@ padding-top: 10em;
 
   .header-btn {
     margin-bottom: 0.5rem;
-    margin-left: 0.5rem;
+    margin-left: 0.7rem;
   }
 
   .header-burger {
@@ -412,8 +357,8 @@ padding-top: 10em;
     border-radius: 10px;
     height: 100%;
     padding: 0.5rem;
-   margin:auto;
-    margin-top: 2rem;
+    margin: 2rem .5rem;
+    display: block;
     background-color: var(--main-light);
     color: var(--font-color);
     transition: .5s;
@@ -474,6 +419,14 @@ gap: 3rem;
 padding: 1rem;
 }
 
+.footer-h {
+  font-size: .8rem;
+}
+
+.footer-p {
+  font-size: .6rem;
+}
+
 .contact-form textarea {
   width: 20rem;
   height: 8rem;
@@ -500,6 +453,12 @@ padding: 1rem;
     height: auto;
   }
  
+  .js-section {
+    display: grid;
+    grid-template-columns: 1fr;
+  gap: 3rem;
+  /* padding-bottom: 15rem; */
+  }
 
 }
 
@@ -611,6 +570,10 @@ padding: 1rem;
   .about-img {
     margin: auto;
     height: 30rem;
+  }
+
+  .js-section {
+    text-align: center;
   }
 
 }
@@ -743,8 +706,124 @@ padding: 1rem;
     height: 30rem;
   }
 
+  .js-section {
+    text-align: center;
+  }
+
+}
+
+/* #timeButton {
+  margin: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  height: 10rem;
+  width: 24rem;
+  border: #AF526B solid 1px;
+  border-radius:10px;
+  background-color: #AF526B;
+  font-family: var(--main-font);
+  color: var(--font-color);
+  font-size: x-large;
+}
+
+#timeDisplay {
+  font-size: 18px;
+  color: var(--font-color);
+  transition: opacity 0.5s ease;  */
+
+/* } */
+
+/* .hidden {
+  opacity: 0;
+  visibility: hidden;
+} */
+
+/* .visible {
+  opacity: 1;
+  visibility: visible;
+} */
+
+
+.js-section {
+
+  margin: 0;
 }
 
 
+.madlib-btn {
+  /* margin: 20px; */
+  /* padding: 1rem; */
+  font-family: var(--main-font);
+  color: var(--font-color);
+  font-size: x-large;
+  height: 10rem;
+  width: 24rem;
+  border: #AF526B solid 1px;
+  border-radius:10px;
+  background-color: #AF526B;
+}
 
+#madLibPopup {
+  margin-bottom: 5rem;
+  padding: 20px;
+  background: var(--main-color);
+  color: var(--font-color);
 
+}
+
+.madlib-submit {
+  border: solid var(--sorbet) 2px;
+  border-radius: 5px;
+  background-color: var(--sorbet);
+  color: var(--font-color);
+  font-family: var(--main-font);
+  padding: .4rem;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.hidden { 
+  display: none;
+} 
+
+.madlib-form input[type="text"] {
+  /* padding: 10px;  */
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: calc(100% - 22px); 
+} 
+
+/* .madlib-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+} */
+
+#madLibResult {
+  /* margin-top: 20px;
+  padding: 10px; */
+
+  background-color: var(--sorbet);
+  font-size: 1.2em;
+  color: var(--font-color);
+  border-radius: 5px;
+}
+
+/* 
+<div id="madLibPopup" class="hidden">
+<h2 class="madlib-text">Mad Lib</h2>
+<form class="madlib-form" id="madLibForm">
+  <label for="noun">Noun:</label>
+  <input type="text" id="noun" name="noun"><br><br>
+  <label for="verb">Verb:</label>
+  <input type="text" id="verb" name="verb"><br><br>
+  <label for="adjective">Adjective:</label>
+  <input type="text" id="adjective" name="adjective"><br><br>
+  <label for="adverb">Adverb:</label>
+  <input type="text" id="adverb" name="adverb"><br><br>
+  <button class="madlib-submit" type="submit">Create Mad Lib</button>
+</form>
+<div id="madLibResult"></div> */

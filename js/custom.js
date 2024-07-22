@@ -65,73 +65,14 @@ function logProjects() {
 logProjects()
 
 
-//madlib
-
-// * <section class="js-section" id="jsSection">
-// <button class="madlib-btn" id="madLibButton">Show Mad Lib</button>
-
-// <div id="madLibPopup" class="hidden">
-//     <h2 class="madlib-text">Mad Lib</h2>
-//     <form class="madlib-form" id="madLibForm">
-//         <label for="noun">Noun:</label>
-//         <input type="text" id="noun" name="noun"><br><br>
-//         <label for="verb">Verb:</label>
-//         <input type="text" id="verb" name="verb"><br><br>
-//         <label for="adjective">Adjective:</label>
-//         <input type="text" id="adjective" name="adjective"><br><br>
-//         <label for="adverb">Adverb:</label>
-//         <input type="text" id="adverb" name="adverb"><br><br>
-//         <button class="madlib-submit" type="submit">Create Mad Lib</button>
-//     </form>
-//     <div id="madLibResult"></div>
-// </div>
-// </section> */
-
-
-// const madLibButton = document.getElementById('madLibButton');
-// const madLibPopup = document.getElementById('madLibPopup');
-// const madLibForm = document.getElementById('madLibForm');
-// const madLibResult = document.getElementById('madLibResult');
-
-// function togglePopup() {
-//     console.log("Toggling popup");
-//     if (madLibPopup.style.display === 'none' || madLibPopup.style.display === '') {
-//         madLibPopup.style.display = 'block';
-//     } else {
-//         madLibPopup.style.display = 'none';
-//     }
-//   }
-
-// function createMadLib(event) {
-//     event.preventDefault();
-//     console.log("Creating Mad Lib");
-//     const noun = document.getElementById('noun').value;
-//     const verb = document.getElementById('verb').value;
-//     const adjective = document.getElementById('adjective').value;
-//     const adverb = document.getElementById('adverb').value;
-
-//     const story = `Once upon a time, a ${adjective} ${noun} decided to ${verb} ${adverb}.`;
-//     madLibResult.textContent = story;
-// }
-
-// function initializeEventListeners() {
-//     madLibButton.addEventListener('click', togglePopup);
-//     madLibForm.addEventListener('submit', createMadLib);
-//     console.log("Event listeners initialized");
-// }
-
-// // Call the function to initialize event listeners
-// initializeEventListeners();
-
 //contact form 
 
 const form = document.getElementById("contactForm");
-const submit = document.getElementById("submitButton")
 let userArray = [];
 
 if (form) {
 
-  submit.addEventListener("submit", onFormSubmit);
+  form.addEventListener("submit", onFormSubmit);
   
   function onFormSubmit(event) {
       event.preventDefault();
@@ -139,15 +80,56 @@ if (form) {
       const dataObject = Object.fromEntries(data.entries());
   
       userArray.push(dataObject);
-      console.log(data.entries);
+      console.log(userArray);
       form.reset();
   }
-   console.log(form)
+}
+
+
+//madlib
+
+const madLibPopup = document.getElementById("madLibPopup");
+const madLibBtn = document.getElementById("madLibButton");
+const madLibForm = document.getElementById("madLibForm");
+const madLibResult = document.getElementById("madLibResult");
+
+if (madLibPopup && madLibBtn) {
+    madLibBtn.addEventListener("click", toggleMadLib);
+
+    function toggleMadLib() {
+        madLibPopup.classList.toggle("hidden");
+        console.log("Toggle Madlib Popup");
+    }
+}
+
+if (madLibForm) {
+    madLibForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+        generateMadLib();
+        resetForm();
+    });
+
+    function generateMadLib() {
+        const noun = document.getElementById("noun").value;
+        const verb = document.getElementById("verb").value;
+        const adjective = document.getElementById("adjective").value;
+        const adverb = document.getElementById("adverb").value;
+
+        const madLibSentence = `The ${noun} algorithm ${verb} decided to ${adjective} ${adverb}.`;
+
+        madLibResult.textContent = madLibSentence;
+        console.log("Mad Lib Created:", madLibSentence);
+    }
+
+    function resetForm() {
+        madLibForm.reset();
+        console.log("Form reset");
+    }
 }
 
 
 
-
+// 	The noun ${algorithm} ${verb{} spectacularly, leaving the entire team in ${adjective} ${adverb}.
 
 
 
