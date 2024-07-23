@@ -127,114 +127,32 @@ if (madLibForm) {
     }
  }
 
-// Time generator 
+// Color picker 
 
-const timeButton = document.getElementById("timeButton");
-const timeDisplay = document.getElementById("timeDisplay");
+const colorPickerButton = document.getElementById("colorPickerButton");
+const colorPickerForm = document.getElementById("colorPickerForm");
+const colorLabel = document.getElementById("colorLabel");
+const changeTypeLabel = document.getElementById("changeTypeLabel");
+const applyColorButton = document.getElementById("applyColorButton");
+const colorSelect = document.getElementById("colorSelect");
+const changeTypeSelect = document.getElementById("changeTypeSelect");
 
-if (timeButton && timeDisplay) {
-    timeButton.addEventListener("click", toggleTimeDisplay);
+if (colorPickerButton && colorPickerForm && colorLabel && changeTypeLabel && applyColorButton && colorSelect && changeTypeSelect) {
+    colorPickerButton.addEventListener("click", function() {
+        colorPickerForm.classList.toggle("form-hide");
+        colorPickerForm.classList.toggle("form-show");
+    });
 
-    function toggleTimeDisplay() {
-        // Get the current time in NYC using moment-timezone
-        const nycTime = moment.tz("America/New_York").format("HH:mm:ss");
+    applyColorButton.addEventListener("click", function() {
+        const selectedColor = colorSelect.value;
+        const changeType = changeTypeSelect.value;
 
-        // Display the time
-        timeDisplay.textContent = `The time in NYC is: ${nycTime}`;
-        timeDisplay.classList.toggle("time-hide");
-        timeDisplay.classList.toggle("visible");
-
-        console.log("Time in NYC displayed/hidden");
-    }
+        if (changeType === "text") {
+            colorLabel.style.color = selectedColor;
+            changeTypeLabel.style.color = selectedColor;
+        } else if (changeType === "background") {
+            colorPickerForm.style.backgroundColor = selectedColor;
+        }
+    });
 }
-
-
-// const timeButton = document.getElementById("timeButton")
-// const timeDisplay = document.getElementById("timeDisplay")
-
-// if (timeButton && timeDisplay) {
-
-// function toggleTime() {
-//     timeDisplay.classList.toggle("time-hide")
-// }
-
-// }
-
-// function toggleMadLib() {
-//   madLibPopup.classList.toggle("hidden");
-//   console.log("Toggle Madlib Popup");
-// }
-
-{/* <div class="time-display">
-<button id="timeButton">I Want To See What Time It Is In NYC</button>
-<div id="timeDisplay" class="hide">The time in NYC is: </div>
-</div> */}
-
-// document.getElementById('timeButton').addEventListener('click', function() {
-//   const timeDisplay = document.getElementById('timeDisplay');
-
-//   // Get the current time in NYC using moment-timezone
-//   const nycTime = moment.tz("America/New_York").format("HH:mm:ss");
-
-//   // Display the time
-//   timeDisplay.textContent = `The time in NYC is: ${nycTime}`;
-//   timeDisplay.classList.remove('hide');
-// });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

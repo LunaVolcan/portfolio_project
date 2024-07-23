@@ -7,7 +7,6 @@
     <script src="https://kit.fontawesome.com/5c92fc24e1.js"
       crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.40/moment-timezone-with-data.min.js"></script>
   </head>
   <body>
     <header>
@@ -72,7 +71,9 @@
           <li><a href="https://github.com/LunaVolcan?tab=repositories"
               target="_blank"> <i class="fa fa-github"></i></a></li>
           <a href="https://sentry.io/answers/">
-            <button class="resume-btn">RESUME</button>
+            <a
+            href="https://docs.google.com/document/d/1j53001eI8Vro2HT37VGw8whPzmNZoL9J/edit?usp=sharing&ouid=118181966276731171023&rtpof=true&sd=true"
+            target="_blank"> <button class="resume-btn">RESUME</button></a>
           </a>
         </ul>
       </nav>
@@ -81,15 +82,33 @@
       </button>
     </header>
     <div class="border"></div>
-    <section class="js-section" id="jsSection">
-      <div class="time-display">
-        <button id="timeButton">I Want To See What Time It Is In NYC</button>
-        <div id="timeDisplay" class="time-hide">The time in NYC is: </div>
-    </div>
+    <section class="js-section">
+    <div class="color-container">
+      <button id="colorPickerButton">Toggle Color Picker</button>
+      <div id="colorPickerForm" class="form-hide">
+          <form id="colorForm">
+              <label id="colorLabel" for="colorSelect">Select a color:</label>
+              <select id="colorSelect">
+                  <option value="#fb6f92">Pink</option>
+                  <option value="#cbb2fe">Lavender</option>
+                  <option value="#ff9100">Orange</option>
+                  <option value="#ffdd00">Yellow</option>
+                  <option value="#90e0ef">Light Blue</option>
+                  <option value="#6d6875">Dark Lavender</option>
+              </select>
+              <label id="changeTypeLabel" for="changeTypeSelect">Change type:</label>
+              <select id="changeTypeSelect">
+                  <option value="text">Text</option>
+                  <option value="background">Background</option>
+              </select>
+              <button type="button" id="applyColorButton">Apply Color</button>
+          </form>
+      </div>
+  </div>
       <div class="madlib-style">
         <button class="madlib-btn" id="madLibButton">Show Mad Lib</button>
         <div id="madLibPopup" class="hidden">
-          <h2 class="madlib-text">Mad Lib</h2>
+
           <form class="madlib-form" id="madLibForm">
             <label for="noun">Noun:</label>
             <input type="text" id="noun" name="noun"><br><br>
@@ -117,6 +136,7 @@
         </div>
         <p class="footer-p"> &copy;2024 Luna Fernandez. All Rights Reserved</p>
       </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.40/moment-timezone-with-data.min.js"></script>
       <script type="module" src="js/custom.js"></script>
     </body>
   </html>

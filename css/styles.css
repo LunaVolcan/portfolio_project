@@ -234,13 +234,14 @@ img:hover {
 
 .js-section {
 background-color: var(--main-color);
-padding-top: 5em;
+padding-top: 5rem;
+padding-bottom: 3rem;
 text-align: center;
 margin: 0;
 }
 
 .madlib-btn {
- margin: 3rem; 
+ margin: auto; 
   font-family: var(--main-font);
   color: var(--font-color);
   font-size: x-large;
@@ -290,7 +291,6 @@ margin: 0;
  max-width: 25rem;
   border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 14px;
   width: calc(100% - 22px); 
 } 
 
@@ -298,13 +298,91 @@ margin: 0;
    max-width: 25rem;
    margin: auto;
   background-color: var(--sorbet);
-  font-size: 1.2em;
+  font-family: var(--second-font);
+  font-weight: 200;
   color: var(--font-color);
   border-radius: 5px;
   text-align: center;
 }
 
+#madLibForm label {
+  font-family: var(--second-font);
+ font-weight: 200;
+}
 
+#colorPickerButton {
+  margin: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  height: 10rem;
+  width: 24rem;
+  border: #AF526B solid 1px;
+  border-radius: 10px;
+  background-color: #AF526B;
+  font-family: var(--main-font);
+  color: var(--font-color);
+  font-size: x-large;
+}
+
+#colorPickerButton:hover {
+  color: var(--sorbet);
+  background-color: var(--font-color);
+  border: var(--font-color) solid 2px;
+}
+
+#colorPickerForm {
+  margin: auto;
+  padding: 20px;
+  /* border: 1px solid #AF526B; */
+  border-radius: 5px;
+  max-width: 25rem;
+}
+
+.form-hide {
+  display: none;
+}
+
+.form-show {
+  display: block;
+}
+
+#colorPickerForm label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: var(--font-color);
+  font-family: var(--second-font);
+  font-weight: 200;
+}
+
+
+#colorPickerForm select {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: var(--second-font);
+  font-weight: 200;
+}
+
+
+#applyColorButton {
+  border: solid var(--sorbet) 2px;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  background-color: var(--sorbet);
+  color: var(--font-color);
+  font-family: var(--main-font);
+  padding: .4rem;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+#applyColorButton:hover {
+  color: var(--sorbet);
+  background-color: var(--font-color);
+  border: var(--font-color) solid 2px;
+}
 
 .contact-section {
   /* font-family: var(--main-font);
@@ -519,10 +597,10 @@ padding: 1rem;
   }
  
   .js-section {
-    display: grid;
-    grid-template-columns: 1fr;
-  gap: 3rem;
-  /* padding-bottom: 15rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
   }
 
 }
@@ -639,7 +717,17 @@ padding: 1rem;
 
   .js-section {
     text-align: center;
+    display: flex;
   }
+
+.madlib-btn {
+  margin-top: 1.3rem;
+  margin-left: 3rem;
+}
+
+#madLibPopup {
+  margin-left: 5rem;
+}
 
 }
 
@@ -771,6 +859,31 @@ padding: 1rem;
     height: 30rem;
   }
 
+  .js-section {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+ 
+  
+  }
+
+.madlib-btn {
+  margin-top: 1.3rem;
+  margin-left: 3rem;
+}
+
+footer {
+  border-bottom: var(--main-light) solid 3rem;
+}
+
+.footer-h {
+  font-size: x-large;
+}
+
+#madLibPopup {
+  margin-left: 5rem;
+}
+
 }
 
 /* #timeButton {
@@ -803,7 +916,7 @@ padding: 1rem;
   visibility: visible;
 } */
 
-#timeButton {
+/* #timeButton {
   margin: 20px;
   padding: 10px 20px;
   font-size: 16px;
@@ -815,9 +928,9 @@ padding: 1rem;
   font-family: var(--main-font);
   color: var(--font-color);
   font-size: x-large;
-}
+} */
 
-#timeDisplay {
+/* #timeDisplay {
   font-size: 18px;
   color: var(--font-color);
   transition: opacity 0.5s ease;
@@ -826,9 +939,16 @@ padding: 1rem;
 .time-hide {
   opacity: 0;
   visibility: hidden;
-}
+} */
 
 /* .visible {
   opacity: 1;
   visibility: visible;
 } */
+
+
+/* .color-container {
+  text-align: center;
+  margin-top: 50px;
+} */
+
