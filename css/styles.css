@@ -251,6 +251,12 @@ margin: 0;
   background-color: #AF526B;
 }
 
+.madlib-btn:hover {
+  color: var(--sorbet);
+  background-color: var(--font-color);
+  border: var(--font-color) solid 2px;
+}
+
 #madLibPopup {
   padding: 20px;
   background: var(--main-color);
@@ -267,6 +273,12 @@ margin: 0;
   padding: .4rem;
   margin-left: 1rem;
   text-decoration: none;
+}
+
+.madlib-submit:hover {
+  color: var(--sorbet);
+  background-color: var(--font-color);
+  border: var(--font-color) solid 2px;
 }
 
 .hidden { 
@@ -773,23 +785,50 @@ padding: 1rem;
   font-family: var(--main-font);
   color: var(--font-color);
   font-size: x-large;
+} */
+
+/* #timeDisplay {
+  font-size: 18px;
+  color: var(--font-color);
+  transition: opacity 0.5s ease;  
+} */
+
+ /* .time-hide {
+  opacity: 0;
+  visibility: hidden;
+}  */
+
+ /* .visible {
+  opacity: 1;
+  visibility: visible;
+} */
+
+#timeButton {
+  margin: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  height: 10rem;
+  width: 24rem;
+  border: #AF526B solid 1px;
+  border-radius: 10px;
+  background-color: #AF526B;
+  font-family: var(--main-font);
+  color: var(--font-color);
+  font-size: x-large;
 }
 
 #timeDisplay {
   font-size: 18px;
   color: var(--font-color);
-  transition: opacity 0.5s ease;  */
+  transition: opacity 0.5s ease;
+}
 
-/* } */
-
-/* .hidden {
+.time-hide {
   opacity: 0;
   visibility: hidden;
-} */
+}
 
 /* .visible {
   opacity: 1;
   visibility: visible;
 } */
-
-

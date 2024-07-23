@@ -125,9 +125,68 @@ if (madLibForm) {
         madLibForm.reset();
         console.log("Form reset");
     }
+ }
 
-    
+// Time generator 
+
+const timeButton = document.getElementById("timeButton");
+const timeDisplay = document.getElementById("timeDisplay");
+
+if (timeButton && timeDisplay) {
+    timeButton.addEventListener("click", toggleTimeDisplay);
+
+    function toggleTimeDisplay() {
+        // Get the current time in NYC using moment-timezone
+        const nycTime = moment.tz("America/New_York").format("HH:mm:ss");
+
+        // Display the time
+        timeDisplay.textContent = `The time in NYC is: ${nycTime}`;
+        timeDisplay.classList.toggle("time-hide");
+        timeDisplay.classList.toggle("visible");
+
+        console.log("Time in NYC displayed/hidden");
+    }
 }
+
+
+// const timeButton = document.getElementById("timeButton")
+// const timeDisplay = document.getElementById("timeDisplay")
+
+// if (timeButton && timeDisplay) {
+
+// function toggleTime() {
+//     timeDisplay.classList.toggle("time-hide")
+// }
+
+// }
+
+// function toggleMadLib() {
+//   madLibPopup.classList.toggle("hidden");
+//   console.log("Toggle Madlib Popup");
+// }
+
+{/* <div class="time-display">
+<button id="timeButton">I Want To See What Time It Is In NYC</button>
+<div id="timeDisplay" class="hide">The time in NYC is: </div>
+</div> */}
+
+// document.getElementById('timeButton').addEventListener('click', function() {
+//   const timeDisplay = document.getElementById('timeDisplay');
+
+//   // Get the current time in NYC using moment-timezone
+//   const nycTime = moment.tz("America/New_York").format("HH:mm:ss");
+
+//   // Display the time
+//   timeDisplay.textContent = `The time in NYC is: ${nycTime}`;
+//   timeDisplay.classList.remove('hide');
+// });
+
+
+
+
+
+
+
 
 
 
