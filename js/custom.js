@@ -115,7 +115,7 @@ if (madLibForm) {
         const adjective = document.getElementById("adjective").value;
         const adverb = document.getElementById("adverb").value;
 
-        const madLibSentence = `The ${noun} algorithm ${verb} decided to ${adjective} ${adverb}.`;
+        const madLibSentence = `The ${noun} ${verb} through the ${adjective}  system ${adverb}, causing a major outage.`
 
         madLibResult.textContent = madLibSentence;
         console.log("Mad Lib Created:", madLibSentence);
@@ -125,11 +125,11 @@ if (madLibForm) {
         madLibForm.reset();
         console.log("Form reset");
     }
+
+    
 }
 
 
-
-// 	The noun ${algorithm} ${verb{} spectacularly, leaving the entire team in ${adjective} ${adverb}.
 
 
 
