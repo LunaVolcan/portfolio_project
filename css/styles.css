@@ -719,8 +719,8 @@ padding: 1rem;
     text-align: center;
     display: flex;
     justify-content: space-around;
-    /* padding-bottom: 25rem; */
-    height: 75vh;
+    padding-bottom: 25rem;
+    /* height: 75vh; */
   }
 }
 
