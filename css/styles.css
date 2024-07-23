@@ -719,17 +719,15 @@ padding: 1rem;
     text-align: center;
     display: flex;
     justify-content: space-around;
-    /* padding-bottom: 20rem; */git i
+    /* padding-bottom: 25rem; */
     height: 100vh;
   }
-
+}
 
 #madLibPopup {
   margin-right: 5rem;
 }
 
-
-}
 
 @media (min-width:915px) and (max-width: 1500px) {
 
