@@ -1,65 +1,67 @@
 :root {
-    --main-font: "betty";
-    --second-font:  "Quicksand", sans-serif;
-    /* --main-color: #1C5B51;
+  --main-font: "betty";
+  --second-font: "Quicksand", sans-serif;
+  /* --main-color: #1C5B51;
     --main-light: #226d61; */
-    --font-color: #F9EAD7;
-    /* --peach: #FCBB7B;
+  --font-color: #F9EAD7;
+  /* --peach: #FCBB7B;
     --summer: #F38079;
     --sorbet: #AF526B; */
-    --main-color: #171717;
-    --main-light: #212121;
-    --sorbet: #747FFF; 
-    --summer: #FF52D9;
-    --peach: #00CCB7;
+  --main-color: #171717;
+  --main-light: #212121;
+  --sorbet: #747FFF;
+  --summer: #FF52D9;
+  --peach: #00CCB7;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Farsan&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inconsolata:wght@200..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Quicksand:wght@300&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 @font-face {
-    font-family: "betty";
-    src: url("../css/fonts/LDHotBetty.otf");
- }
-
- body {
-    margin: 0;
-    padding: 0;
-  }
-
-
-h1, h2, h3 {
-margin-top: 0;
+  font-family: "betty";
+  src: url("../css/fonts/LDHotBetty.otf");
 }
 
-  li {
-    padding:1rem
- } 
+body {
+  margin: 0;
+  padding: 0;
+}
 
- .border  {
-        border: 4px solid; 
-        border-image-slice: 1;
-        border-image-source: linear-gradient(to left, var(--summer)  15%, var(--sorbet) 40%, var(--peach) 100%);
-        border-left: none;
-        border-right: none; 
-        border-top: none; 
-        border-radius: 5px; 
-        box-shadow: inset 0 -4px 0 0 linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%);
-      }
-  
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+li {
+  padding: 1rem
+}
+
+.border {
+  border: 4px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, var(--summer) 15%, var(--sorbet) 40%, var(--peach) 100%);
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-radius: 5px;
+  box-shadow: inset 0 -4px 0 0 linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%);
+}
+
 
 .moon {
-   height: 5rem;
-   width: 5rem;
+  height: 5rem;
+  width: 5rem;
 }
 
 .header-name {
-    font-family: var(--main-font);
-    color: var(--font-color);
+  font-family: var(--main-font);
+  color: var(--font-color);
 }
 
 .header-name a {
   text-decoration: none;
-  color: inherit; 
+  color: inherit;
 }
 
 .header-name a:hover {
@@ -67,44 +69,44 @@ margin-top: 0;
 }
 
 header {
-    background-color: var(--main-light);
-   }
+  background-color: var(--main-light);
+}
 
 .bar-nav :hover {
   color: var(--summer);
 }
 
 h1 {
-    font-family: var(--main-font);
+  font-family: var(--main-font);
 }
 
 h2 {
-font-family: var(--main-font);
-color: var(--font-color);
+  font-family: var(--main-font);
+  color: var(--font-color);
 }
 
 .button {
-    border: solid var(--sorbet) 2px;
-    border-radius: 5px;
-    background-color: var(--sorbet);
-    color: var(--font-color);
-    font-family: var(--main-font);
-    padding: .4rem;
-    margin-left: 1rem;
-    text-decoration: none;
-    cursor: pointer;
+  border: solid var(--sorbet) 2px;
+  border-radius: 5px;
+  background-color: var(--sorbet);
+  color: var(--font-color);
+  font-family: var(--main-font);
+  padding: .4rem;
+  margin-left: 1rem;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.resume-btn{
+.resume-btn {
   border: none;
   border-radius: 5px;
   background-color: var(--sorbet);
   color: var(--font-color);
   font-family: var(--main-font);
   font-size: large;
- text-decoration: none;
- padding: .5rem;
- cursor: pointer;
+  text-decoration: none;
+  padding: .5rem;
+  cursor: pointer;
 }
 
 .resume-btn:hover {
@@ -113,16 +115,16 @@ color: var(--font-color);
   border: linear-gradient(45deg, var(--summer), var(--sorbet), var(--peach)) solid 2px;
 }
 
-.button:hover  {
+.button:hover {
   color: var(--font-color);
   background: linear-gradient(45deg, var(--summer), var(--sorbet), var(--peach));
   border: linear-gradient(45deg, var(--summer), var(--sorbet), var(--peach)) solid 2px;
-  } 
+}
 
 .hero-section {
-    border: var(--main-color) solid 2px;
-    background-color: var(--main-color);
-    color: var(--font-color);  
+  border: var(--main-color) solid 2px;
+  background-color: var(--main-color);
+  color: var(--font-color);
 }
 
 .hero-name {
@@ -131,13 +133,13 @@ color: var(--font-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0;
-  }
+}
 
 .project-imgs {
-    max-width: 100%;
-    border-radius: 5px;
-    filter: grayscale(100%);
-    transition: filter 0.3s ease;
+  max-width: 100%;
+  border-radius: 5px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
 }
 
 img:hover {
@@ -145,8 +147,8 @@ img:hover {
 }
 
 .projects-section {
-    background-color: var(--main-color);
-    border: solid var(--main-color) 1px;
+  background-color: var(--main-color);
+  border: solid var(--main-color) 1px;
 }
 
 .project-p {
@@ -160,9 +162,9 @@ img:hover {
 
 .project-text {
   font-family: var(--main-font);
-    font-size: 1.5rem;
-    color: var(--font-color);
-    -webkit-background-clip: text;
+  font-size: 1.5rem;
+  color: var(--font-color);
+  -webkit-background-clip: text;
 }
 
 .contact-section {
@@ -173,23 +175,23 @@ img:hover {
   justify-content: center;
   align-items: center;
   padding: 2rem;
- }
- 
- .contact-h {
-   font-family: var(--main-font);
-   color: var(--font-color);
-   font-size: x-large;
- }
- 
- .contact-p {
-   font-family: var(--second-font);
-   font-weight: 200;
-   color: var(--font-color);
-   font-size: large ;
-   text-align: center;
- }
- 
- .contact-button {
+}
+
+.contact-h {
+  font-family: var(--main-font);
+  color: var(--font-color);
+  font-size: x-large;
+}
+
+.contact-p {
+  font-family: var(--second-font);
+  font-weight: 200;
+  color: var(--font-color);
+  font-size: large;
+  text-align: center;
+}
+
+.contact-button {
   border: solid var(--sorbet) 2px;
   border-radius: 5px;
   background-color: var(--sorbet);
@@ -198,15 +200,15 @@ img:hover {
   padding: .4rem;
   text-decoration: none;
   cursor: pointer;
- }
+}
 
- .contact-button:hover {
+.contact-button:hover {
   color: var(--font-color);
   background: linear-gradient(45deg, var(--summer), var(--sorbet), var(--peach));
   border: linear-gradient(45deg, var(--summer), var(--sorbet), var(--peach)) solid 2px;
 }
 
- footer {
+footer {
   background-color: var(--main-light);
   border: var(--main-light) solid 1px;
   padding: 4rem;
@@ -214,29 +216,29 @@ img:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
- }
+}
 
 .footer-h {
   font-family: var(--main-font);
   color: var(--font-color);
   font-size: large;
-  }
+}
 
-  .icons {
-    font-size: xx-large;
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    gap: 20px; 
-    padding: 5px; 
-  }
+.icons {
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 5px;
+}
 
-  .icons i {
-    color: var(--peach);
+.icons i {
+  color: var(--peach);
 }
 
 .icons a:hover i {
-  color: var(--summer); 
+  color: var(--summer);
   transform: scale(1.1);
 }
 
@@ -248,22 +250,22 @@ img:hover {
 }
 
 .js-section {
-background-color: var(--main-color);
-padding-top: 5rem;
-padding-bottom: 3rem;
-text-align: center;
-margin: 0;
+  background-color: var(--main-color);
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  margin: 0;
 }
 
 .madlib-btn {
- margin: auto; 
+  margin: auto;
   font-family: var(--main-font);
   color: var(--font-color);
   font-size: x-large;
   height: 10rem;
   width: 24rem;
   border: var(--sorbet) solid 1px;
-  border-radius:10px;
+  border-radius: 10px;
   background-color: var(--sorbet);
   cursor: pointer;
 }
@@ -272,7 +274,7 @@ margin: 0;
   color: var(--font-color);
   background: linear-gradient(45deg, var(--summer), var(--sorbet), var(--peach));
   border: linear-gradient(45deg, var(--summer), var(--sorbet), var(--peach)) solid 2px;
-  
+
 }
 
 #madLibPopup {
@@ -300,21 +302,21 @@ margin: 0;
   border: linear-gradient(45deg, var(--summer), var(--sorbet), var(--peach)) solid 2px;
 }
 
-.hidden { 
+.hidden {
   display: none !important;
-} 
+}
 
 .madlib-form input[type="text"] {
   margin-top: 10px;
- max-width: 25rem;
+  max-width: 25rem;
   border: 1px solid #ccc;
   border-radius: 4px;
-  width: calc(100% - 22px); 
-} 
+  width: calc(100% - 22px);
+}
 
 #madLibResult {
-   max-width: 25rem;
-   margin: auto;
+  max-width: 25rem;
+  margin: auto;
   background-color: var(--sorbet);
   font-family: var(--second-font);
   font-weight: 200;
@@ -325,7 +327,7 @@ margin: 0;
 
 #madLibForm label {
   font-family: var(--second-font);
- font-weight: 200;
+  font-weight: 200;
 }
 
 #colorPickerButton {
@@ -352,7 +354,6 @@ margin: 0;
 #colorPickerForm {
   margin: auto;
   padding: 20px;
-  /* border: 1px solid #AF526B; */
   border-radius: 5px;
   max-width: 25rem;
 }
@@ -441,9 +442,9 @@ margin: 0;
 }
 
 .contact-btn:hover {
-  background-color: var(--font-color); 
-  color: var(--sorbet); 
-  border-color: var(--font-color); 
+  background-color: var(--font-color);
+  color: var(--sorbet);
+  border-color: var(--font-color);
 }
 
 .about-img {
@@ -451,10 +452,10 @@ margin: 0;
   border-radius: 20rem;
   border: solid var(--sorbet) 3px;
   display: block;
-  position:relative;
+  position: relative;
 }
 
-.about-section { 
+.about-section {
   background-color: var(--main-color);
   color: var(--font-color);
   font-family: var(--second-font);
@@ -473,13 +474,13 @@ margin: 0;
   color: var(--sorbet);
 }
 
-@media (min-width: 300px) and (max-width: 699px)  {
+@media (min-width: 300px) and (max-width: 699px) {
 
   header {
     display: flex;
- }
+  }
 
- .bar-nav {
+  .bar-nav {
     background: var(--main-color);
     position: absolute;
     left: -100%;
@@ -488,7 +489,7 @@ margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-   transition: all 500ms;
+    transition: all 500ms;
     text-align: center;
   }
 
@@ -506,8 +507,8 @@ margin: 0;
 
   ul {
     list-style-type: none;
-   font-family: var(--main-font);
-    font-size: larger; 
+    font-family: var(--main-font);
+    font-size: larger;
   }
 
   .header-btn {
@@ -527,7 +528,7 @@ margin: 0;
     transition: .5s;
     cursor: pointer;
   }
- 
+
   .header-burger:hover {
     color: var(--font-color);
     background: linear-gradient(45deg, var(--summer), var(--sorbet), var(--peach));
@@ -543,64 +544,57 @@ margin: 0;
     display: none;
   }
 
-.header-name {
-margin-top: 2rem;
-}
-
-.hero-section {
-  padding-left: 2rem;
-}
-
-/* .hero-name {
-font-size: 3rem;
-background: -webkit-linear-gradient( #F38079, #FCBB7B,#F9EAD7);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-} */
-
-.hero-font {
-font-size:  2.5rem;
-}
-
-.hero-p {
-font-size: 1.3rem;
-font-family: var(--second-font);
-  font-weight: 200;
-  color: var(--font-color);
-  letter-spacing: 2px;
-  line-height: 2rem;
-}
-
-.proud {
-  padding: 1rem 0 2rem 1rem;
-  background-color: var(--main-color);
-  border: var(--main-color) solid 1px;
-}
-
-.projects-section {
-display: grid;
-grid-template-columns: 1fr;
-gap: 3rem;
-padding: 1rem;
-}
-
-.footer-h {
-  font-size: .8rem;
-}
-
-.footer-p {
-  font-size: .6rem;
-}
-
-.contact-form textarea {
-  width: 20rem;
-  height: 8rem;
-}
-
-.contact-form {
-  padding: 10rem;
+  .header-name {
+    margin-top: 2rem;
   }
-  
+
+  .hero-section {
+    padding-left: 2rem;
+  }
+
+  .hero-font {
+    font-size: 2.5rem;
+  }
+
+  .hero-p {
+    font-size: 1.3rem;
+    font-family: var(--second-font);
+    font-weight: 200;
+    color: var(--font-color);
+    letter-spacing: 2px;
+    line-height: 2rem;
+  }
+
+  .proud {
+    padding: 1rem 0 2rem 1rem;
+    background-color: var(--main-color);
+    border: var(--main-color) solid 1px;
+  }
+
+  .projects-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 1rem;
+  }
+
+  .footer-h {
+    font-size: .8rem;
+  }
+
+  .footer-p {
+    font-size: .6rem;
+  }
+
+  .contact-form textarea {
+    width: 20rem;
+    height: 8rem;
+  }
+
+  .contact-form {
+    padding: 10rem;
+  }
+
   .contact-form input[type="text"] {
     width: 100%;
     margin: .5rem 0 .5rem 0;
@@ -614,104 +608,106 @@ padding: 1rem;
   }
 
   .about-img {
-    width: auto; /* Maintains the aspect ratio of the image */
+    width: auto;
     height: auto;
   }
- 
+
   .js-section {
     display: flex;
     flex-direction: column;
-    
   }
 
-
+  .madlib-btn {
+    margin-top: 1rem;
+  }
 }
 
 @media (min-width: 700px) and (max-width: 914px) {
 
 
- nav a {
+  nav a {
     text-decoration: none;
     color: var(--font-color);
   }
 
 
-.name-logo {
-  display: flex;
-  justify-content: center;
-}
+  .name-logo {
+    display: flex;
+    justify-content: center;
+  }
 
-.header-name {
-  margin-top: 2.5rem;
-}
+  .header-name {
+    margin-top: 2.5rem;
+  }
 
   .header-menu {
-  display: flex;
-  margin-bottom: 0;
-}
+    display: flex;
+    margin-bottom: 0;
+  }
 
-ul {
-  list-style-type: none;
- font-family: var(--main-font);
-  font-size: larger; 
-  padding-bottom: 1rem;
-}
+  ul {
+    list-style-type: none;
+    font-family: var(--main-font);
+    font-size: larger;
+    padding-bottom: 1rem;
+  }
 
-.resume-btn {
-  margin-top: .5rem;;
-}
+  .resume-btn {
+    margin-top: .5rem;
+    ;
+  }
 
   .header-burger {
     display: none;
   }
 
- .hero-section {
-  display: flex;
- justify-content: space-around;
- align-items: center;
- padding-left: 1rem;
- }
-
-
-.code {
-  height: 10rem;
-  width:  15rem;
-}
-  
-  .hero-font {
-  font-size:  2.5rem;
+  .hero-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 1rem;
   }
-  
+
+
+  .code {
+    height: 10rem;
+    width: 15rem;
+  }
+
+  .hero-font {
+    font-size: 2.5rem;
+  }
+
   .hero-p {
-  font-size: 1.3rem;
-  font-family: var(--second-font);
+    font-size: 1.3rem;
+    font-family: var(--second-font);
     font-weight: 200;
     color: var(--font-color);
     letter-spacing: 2px;
   }
 
- .proud {
-  background-color: var(--main-color);
-  border: var(--main-color) solid 1px;
-  padding: 1rem 1rem 2rem 1rem;
- }
-
- .projects-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
-padding: 1rem;
-}
-
-.contact-form textarea {
-  width: 40rem;
-  height: 10rem;
-}
-
-.contact-form {
-  padding: 10rem;
+  .proud {
+    background-color: var(--main-color);
+    border: var(--main-color) solid 1px;
+    padding: 1rem 1rem 2rem 1rem;
   }
-  
+
+  .projects-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .contact-form textarea {
+    width: 40rem;
+    height: 10rem;
+  }
+
+  .contact-form {
+    padding: 10rem;
+  }
+
   .contact-form input[type="text"] {
     width: 100%;
     margin: .5rem 0 .5rem 0;
@@ -740,12 +736,16 @@ padding: 1rem;
   #madLibPopup {
     margin-right: 5rem;
   }
+
+  .madlib-btn {
+    margin-top: 1rem;
+  }
 }
 
 @media (min-width:915px) and (max-width: 1500px) {
 
   header {
-    display:flex;
+    display: flex;
     justify-content: space-around;
   }
 
@@ -758,14 +758,14 @@ padding: 1rem;
   nav a {
     text-decoration: none;
     justify-content: space-around;
-   margin-bottom: 1rem;
+    margin-bottom: 1rem;
     color: var(--font-color);
   }
 
   ul {
     list-style-type: none;
-   font-family: var(--main-font);
-    font-size: larger; 
+    font-family: var(--main-font);
+    font-size: larger;
   }
 
 
@@ -776,7 +776,7 @@ padding: 1rem;
 
   .header-name {
     margin-top: 2rem;
-    
+
   }
 
   .header-burger {
@@ -789,66 +789,57 @@ padding: 1rem;
 
   .code {
     height: 20rem;
-    width:  15rem;
+    width: 15rem;
     padding-right: 8rem;
     margin: auto;
   }
 
-.hero-section {
-  display: flex;
-  justify-content: space-around;
-}
+  .hero-section {
+    display: flex;
+    justify-content: space-around;
+  }
 
-  /* .hero-name {
-    font-size: 3rem;
-    background: -webkit-linear-gradient( #F38079, #FCBB7B,#F9EAD7);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    } */
-    
-    .hero-font {
-    font-size:  2rem;
-    }
-    
-    .hero-p {
+  .hero-font {
+    font-size: 2rem;
+  }
+
+  .hero-p {
     font-size: 1.3rem;
     font-family: var(--second-font);
-      font-weight: 200;
-      color: var(--font-color);
-      letter-spacing: 2px;
-    }
- 
-.hero-text {
-  display:flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content:center;
-}
-
-.proud {
-  background-color: var(--main-color);
-  border: var(--main-color) solid 1px;
-  /* padding-left: 1rem;
-  padding-top: 2rem; */
-  padding: 2rem 0 1rem 1rem;
-}
-
-.projects-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
-  padding: 1rem;  
-}
-
-.contact-form textarea {
-  width: 50rem;
-  height: 6rem;
-}
-
-.contact-form {
-  padding: 5rem;
+    font-weight: 200;
+    color: var(--font-color);
+    letter-spacing: 2px;
   }
-  
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+
+  .proud {
+    background-color: var(--main-color);
+    border: var(--main-color) solid 1px;
+    padding: 2rem 0 1rem 1rem;
+  }
+
+  .projects-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .contact-form textarea {
+    width: 50rem;
+    height: 6rem;
+  }
+
+  .contact-form {
+    padding: 5rem;
+  }
+
   .contact-form input[type="text"] {
     width: 100%;
     margin: .5rem 0 .5rem 0;
@@ -861,9 +852,9 @@ padding: 1rem;
     padding: 3rem;
   }
 
-.about-me {
-  margin:auto;
-}
+  .about-me {
+    margin: auto;
+  }
 
   .about-img {
     margin: auto;
@@ -874,24 +865,22 @@ padding: 1rem;
     text-align: center;
     display: flex;
     justify-content: center;
- 
-  
   }
 
-.madlib-btn {
-  margin-left: 3rem;
-}
+  .madlib-btn {
+    margin-left: 3rem;
+  }
 
-footer {
-  border-bottom: var(--main-light) solid 3rem;
-}
+  footer {
+    border-bottom: var(--main-light) solid 3rem;
+  }
 
-.footer-h {
-  font-size: x-large;
-}
+  .footer-h {
+    font-size: x-large;
+  }
 
-#madLibPopup {
-  margin-left: 5rem;
-}
+  #madLibPopup {
+    margin-left: 5rem;
+  }
 
 }
