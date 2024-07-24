@@ -718,9 +718,9 @@ padding: 1rem;
   .js-section {
     text-align: center;
     display: flex;
-    justify-content: space-around;
-    padding-bottom: 25rem;
-    /* height: 75vh; */
+    flex-direction: column;
+    padding-bottom: 20rem;
+    padding-top: 10rem;
   }
 }
 
