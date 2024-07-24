@@ -1,14 +1,17 @@
 :root {
     --main-font: "betty";
     --second-font:  "Quicksand", sans-serif;
-    --main-color: #1C5B51;
-    --main-light: #226d61;
+    /* --main-color: #1C5B51;
+    --main-light: #226d61; */
     --font-color: #F9EAD7;
-    --light-green: #8BAC8C;
-    --olive: #958F39;
-    --peach: #FCBB7B;
+    /* --peach: #FCBB7B;
     --summer: #F38079;
-    --sorbet: #AF526B;
+    --sorbet: #AF526B; */
+    --main-color: #171717;
+    --main-light: #212121;
+    --sorbet: #747FFF; 
+    --summer: #FF52D9;
+    --peach: #00CCB7;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Farsan&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inconsolata:wght@200..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Quicksand:wght@300&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
@@ -35,7 +38,7 @@ margin-top: 0;
  .border  {
         border: 4px solid; 
         border-image-slice: 1;
-        border-image-source: linear-gradient(to right, #AF526B 10%, #F38079 50%, #FCBB7B  100%);
+        border-image-source: linear-gradient(to left, var(--summer)  15%, var(--sorbet) 40%, var(--peach) 100%);
         border-left: none;
         border-right: none; 
         border-top: none; 
@@ -89,6 +92,7 @@ color: var(--font-color);
     padding: .4rem;
     margin-left: 1rem;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .resume-btn{
@@ -99,18 +103,20 @@ color: var(--font-color);
   font-family: var(--main-font);
   font-size: large;
  text-decoration: none;
- padding: .5rem
+ padding: .5rem;
+ cursor: pointer;
 }
 
 .resume-btn:hover {
-  color: var(--sorbet);
-  background-color: var(--font-color);
+  color: var(--font-color);
+  background: linear-gradient(45deg, var(--summer), var(--sorbet), var(--peach));
+  border: linear-gradient(45deg, var(--summer), var(--sorbet), var(--peach)) solid 2px;
 }
 
 .button:hover  {
-  color: var(--sorbet);
-  background-color: var(--font-color);
-  border: var(--font-color) solid 2px;
+  color: var(--font-color);
+  background: linear-gradient(45deg, var(--summer), var(--sorbet), var(--peach));
+  border: linear-gradient(45deg, var(--summer), var(--sorbet), var(--peach)) solid 2px;
   } 
 
 .hero-section {
@@ -118,6 +124,14 @@ color: var(--font-color);
     background-color: var(--main-color);
     color: var(--font-color);  
 }
+
+.hero-name {
+  font-size: 3rem;
+  background: -webkit-linear-gradient(#FF52D9, #747FFF, #00CCB7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  }
 
 .project-imgs {
     max-width: 100%;
@@ -183,12 +197,13 @@ img:hover {
   font-family: var(--main-font);
   padding: .4rem;
   text-decoration: none;
+  cursor: pointer;
  }
 
  .contact-button:hover {
-  background-color: var(--font-color); 
-  color: var(--sorbet); 
-  border-color: var(--font-color); 
+  color: var(--font-color);
+  background: linear-gradient(45deg, var(--summer), var(--sorbet), var(--peach));
+  border: linear-gradient(45deg, var(--summer), var(--sorbet), var(--peach)) solid 2px;
 }
 
  footer {
@@ -247,15 +262,17 @@ margin: 0;
   font-size: x-large;
   height: 10rem;
   width: 24rem;
-  border: #AF526B solid 1px;
+  border: var(--sorbet) solid 1px;
   border-radius:10px;
-  background-color: #AF526B;
+  background-color: var(--sorbet);
+  cursor: pointer;
 }
 
 .madlib-btn:hover {
-  color: var(--sorbet);
-  background-color: var(--font-color);
-  border: var(--font-color) solid 2px;
+  color: var(--font-color);
+  background: linear-gradient(45deg, var(--summer), var(--sorbet), var(--peach));
+  border: linear-gradient(45deg, var(--summer), var(--sorbet), var(--peach)) solid 2px;
+  
 }
 
 #madLibPopup {
@@ -274,12 +291,13 @@ margin: 0;
   padding: .4rem;
   margin-left: 1rem;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .madlib-submit:hover {
-  color: var(--sorbet);
-  background-color: var(--font-color);
-  border: var(--font-color) solid 2px;
+  color: var(--font-color);
+  background: linear-gradient(45deg, var(--summer), var(--sorbet), var(--peach));
+  border: linear-gradient(45deg, var(--summer), var(--sorbet), var(--peach)) solid 2px;
 }
 
 .hidden { 
@@ -316,18 +334,19 @@ margin: 0;
   font-size: 16px;
   height: 10rem;
   width: 24rem;
-  border: #AF526B solid 1px;
+  border: var(--sorbet) solid 1px;
   border-radius: 10px;
-  background-color: #AF526B;
+  background-color: var(--sorbet);
   font-family: var(--main-font);
   color: var(--font-color);
   font-size: x-large;
+  cursor: pointer;
 }
 
 #colorPickerButton:hover {
-  color: var(--sorbet);
-  background-color: var(--font-color);
-  border: var(--font-color) solid 2px;
+  color: var(--font-color);
+  background: linear-gradient(45deg, var(--summer), var(--sorbet), var(--peach));
+  border: linear-gradient(45deg, var(--summer), var(--sorbet), var(--peach)) solid 2px;
 }
 
 #colorPickerForm {
@@ -376,12 +395,13 @@ margin: 0;
   padding: .4rem;
   margin-left: 1rem;
   text-decoration: none;
+  cursor: pointer;
 }
 
 #applyColorButton:hover {
-  color: var(--sorbet);
-  background-color: var(--font-color);
-  border: var(--font-color) solid 2px;
+  color: var(--font-color);
+  background: linear-gradient(45deg, var(--summer), var(--sorbet), var(--peach));
+  border: linear-gradient(45deg, var(--summer), var(--sorbet), var(--peach)) solid 2px;
 }
 
 .contact-section {
@@ -505,11 +525,13 @@ margin: 0;
     background-color: var(--main-light);
     color: var(--font-color);
     transition: .5s;
+    cursor: pointer;
   }
  
   .header-burger:hover {
-    background-color: var(--font-color);
-    color: var(--main-light);
+    color: var(--font-color);
+    background: linear-gradient(45deg, var(--summer), var(--sorbet), var(--peach));
+    border: linear-gradient(45deg, var(--summer), var(--sorbet), var(--peach)) solid 2px;
   }
 
   .name-logo {
@@ -529,12 +551,12 @@ margin-top: 2rem;
   padding-left: 2rem;
 }
 
-.hero-name {
+/* .hero-name {
 font-size: 3rem;
 background: -webkit-linear-gradient( #F38079, #FCBB7B,#F9EAD7);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
-}
+} */
 
 .hero-font {
 font-size:  2.5rem;
@@ -655,14 +677,6 @@ ul {
   height: 10rem;
   width:  15rem;
 }
-
- .hero-name {
-  font-size: 3rem;
-  background: -webkit-linear-gradient( #F38079, #FCBB7B,#F9EAD7);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin: 0;
-  }
   
   .hero-font {
   font-size:  2.5rem;
@@ -722,12 +736,11 @@ padding: 1rem;
     padding-bottom: 15rem;
     padding-top: 10rem;
   }
-}
 
-#madLibPopup {
-  margin-right: 5rem;
+  #madLibPopup {
+    margin-right: 5rem;
+  }
 }
-
 
 @media (min-width:915px) and (max-width: 1500px) {
 
@@ -786,12 +799,12 @@ padding: 1rem;
   justify-content: space-around;
 }
 
-  .hero-name {
+  /* .hero-name {
     font-size: 3rem;
     background: -webkit-linear-gradient( #F38079, #FCBB7B,#F9EAD7);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    }
+    } */
     
     .hero-font {
     font-size:  2rem;
@@ -882,70 +895,3 @@ footer {
 }
 
 }
-
-/* #timeButton {
-  margin: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
-  height: 10rem;
-  width: 24rem;
-  border: #AF526B solid 1px;
-  border-radius:10px;
-  background-color: #AF526B;
-  font-family: var(--main-font);
-  color: var(--font-color);
-  font-size: x-large;
-} */
-
-/* #timeDisplay {
-  font-size: 18px;
-  color: var(--font-color);
-  transition: opacity 0.5s ease;  
-} */
-
- /* .time-hide {
-  opacity: 0;
-  visibility: hidden;
-}  */
-
- /* .visible {
-  opacity: 1;
-  visibility: visible;
-} */
-
-/* #timeButton {
-  margin: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
-  height: 10rem;
-  width: 24rem;
-  border: #AF526B solid 1px;
-  border-radius: 10px;
-  background-color: #AF526B;
-  font-family: var(--main-font);
-  color: var(--font-color);
-  font-size: x-large;
-} */
-
-/* #timeDisplay {
-  font-size: 18px;
-  color: var(--font-color);
-  transition: opacity 0.5s ease;
-}
-
-.time-hide {
-  opacity: 0;
-  visibility: hidden;
-} */
-
-/* .visible {
-  opacity: 1;
-  visibility: visible;
-} */
-
-
-/* .color-container {
-  text-align: center;
-  margin-top: 50px;
-} */
-
