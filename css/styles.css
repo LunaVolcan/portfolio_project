@@ -1,17 +1,17 @@
 :root {
   --main-font: "betty";
   --second-font: "Quicksand", sans-serif;
-  /* --main-color: #1C5B51;
-    --main-light: #226d61; */
   --font-color: #F9EAD7;
-  /* --peach: #FCBB7B;
-    --summer: #F38079;
-    --sorbet: #AF526B; */
   --main-color: #171717;
   --main-light: #212121;
   --sorbet: #747FFF;
   --summer: #FF52D9;
   --peach: #00CCB7;
+  /* --main-color: #1C5B51;
+    --main-light: #226d61; */
+  /* --peach: #FCBB7B;
+    --summer: #F38079;
+    --sorbet: #AF526B; */
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Farsan&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inconsolata:wght@200..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Quicksand:wght@300&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
@@ -255,6 +255,7 @@ footer {
   padding-bottom: 3rem;
   text-align: center;
   margin: 0;
+  height: 95vh;
 }
 
 .madlib-btn {
