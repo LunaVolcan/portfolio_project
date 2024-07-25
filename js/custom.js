@@ -155,4 +155,3 @@ if (colorPickerButton && colorPickerForm && colorLabel && changeTypeLabel && app
         }
     });
 }
-

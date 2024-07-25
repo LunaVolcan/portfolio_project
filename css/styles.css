@@ -405,6 +405,15 @@ footer {
   border: linear-gradient(45deg, var(--summer), var(--sorbet), var(--peach)) solid 2px;
 }
 
+.stars {
+  height: 2.5rem;
+  width: 3rem;
+}
+
+.name-stars {
+  display: flex;
+}
+
 .contact-section {
   /* font-family: var(--main-font);
   font-size: larger; */
@@ -420,10 +429,22 @@ footer {
 
 .contact-form input[type="text"] {
   display: block;
-  border: 1px solid #ccc;
-  /* border-radius: 5px; */
+  border: 1px solid var(--sorbet);
+  border-radius: 5px;
   box-sizing: border-box;
   font-size: 16px;
+  font-family: var(--main-font);
+font-weight: bold;
+font-size: medium;
+}
+
+.comment-box textarea {
+border-radius: 5px;
+border: var(--peach) solid 2px;
+font-family: var(--main-font);
+font-weight: bold;
+font-size: medium;
+padding-top: 1rem;
 }
 
 .contact-form label {
@@ -442,9 +463,18 @@ footer {
 }
 
 .contact-btn:hover {
-  background-color: var(--font-color);
-  color: var(--sorbet);
-  border-color: var(--font-color);
+  color: var(--font-color);
+  background: linear-gradient(45deg, var(--summer), var(--sorbet), var(--peach));
+  border: linear-gradient(45deg, var(--summer), var(--sorbet), var(--peach)) solid 2px;
+}
+
+.moon-about {
+  display: flex;
+}
+
+.moon-stars {
+  width: 2.5rem;
+  height: 3rem;;
 }
 
 .about-img {
@@ -592,7 +622,7 @@ footer {
   }
 
   .contact-form {
-    padding: 10rem;
+    padding: 5rem 0 5rem 0;
   }
 
   .contact-form input[type="text"] {
@@ -742,7 +772,7 @@ footer {
   }
 }
 
-@media (min-width:915px) and (max-width: 1500px) {
+@media (min-width:915px) and (max-width: 3000px) {
 
   header {
     display: flex;
