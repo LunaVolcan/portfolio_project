@@ -255,7 +255,6 @@ footer {
   padding-bottom: 3rem;
   text-align: center;
   margin: 0;
-  height: 95vh;
 }
 
 .madlib-btn {
@@ -646,6 +645,7 @@ padding-top: 1rem;
   .js-section {
     display: flex;
     flex-direction: column;
+    
   }
 
   .madlib-btn {
@@ -762,6 +762,7 @@ padding-top: 1rem;
     flex-direction: column;
     padding-bottom: 15rem;
     padding-top: 10rem;
+    height: 95vh;
   }
 
   #madLibPopup {
